@@ -126,9 +126,7 @@ p {
   p-class {
     text-align: center;
   }
-  .launch-link {
-    display: block;
-    text-align: center;
-    margin: 0 5px;
+  d-none {
+    display: none !important;
   }
 }
