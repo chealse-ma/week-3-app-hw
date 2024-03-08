@@ -3,6 +3,35 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+body {
+  margin: 100px 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -23,66 +52,15 @@
   color: white;
 }
 
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-body {
-  margin: 60px auto;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-  margin: 0;
-}
-
-h1 {
-  font-size: 96px;
-}
-
-h2,
-h5 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.navigation-links {
-  margin-top: 40px;
-  justify-content: center;
-  display: flex;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+.primary-link:hover {
   color: white;
 }
 
 .secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -97,6 +75,10 @@ p {
   margin: 30px 0;
 }
 
+.about-paragraphs p {
+  margin: 10px;
+}
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -109,23 +91,24 @@ p {
   text-decoration: underline;
 }
 
-.pictures-fluid {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   h1 {
-    text-align: center;
-    font-size: 40px;
+    font-size: 48px;
+    line-height: 1.5;
   }
+
   h2 {
+    font-size: 32px;
     text-align: center;
-    font-size: 25px;
   }
+
   p {
     text-align: center;
   }
-  .d-none {
-    display: none !important;
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
