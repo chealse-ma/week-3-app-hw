@@ -114,7 +114,7 @@ p {
   height: auto;
 }
 
-@media (max-width: 575) {
+@media (max-width: 575px) {
   h1 {
     font-size: 45px;
   }
